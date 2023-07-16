@@ -1,0 +1,42 @@
+<section>
+  <h3>Autres voyages</h3>
+  <div class="container">
+    <div *ngFor="let voyage of voyages; let i = index">
+      <ng-container *ngIf="i !== voyages.length - 1">
+        <a (click)="onImageClick(voyage)"
+          [routerLink]="['/page2']"
+          [queryParams]="{
+            id: voyage.id,
+            image: voyage.image,
+            city: voyage.city,
+            country: voyage.country,
+            goDate :voyage.goDate?.toISOString(),
+            backDate: voyage.backDate?.toISOString(),
+            avisPositive: voyage.avisPositive,
+            avisNegatif: voyage.avisNegatif,
+            conseil: voyage.conseil,
+          }"
+        >
+          <img
+            class="imageContainer"
+            src="{{ voyage.image }}"
+            alt="Image de {{ voyage.country }}"
+          />
+
+          <div class="petitContainer">
+            <div class="textContainer">
+              <h2>{{ voyage.country }}</h2>
+              <p>{{ voyage.city }}</p>
+
+              <div class="barre-verticale"></div>
+            </div>
+            <div class="dateContainer">
+              <p>Du {{ voyage.goDate | date : "dd/MM/yyyy" }}</p>
+              <p>au {{ voyage.backDate | date : "dd/MM/yyyy" }}</p>
+            </div>
+          </div>
+        </a>
+      </ng-container>
+    </div>
+  </div>
+</section>

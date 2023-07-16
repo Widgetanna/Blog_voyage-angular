@@ -1,0 +1,19 @@
+<section>
+  <div class="container">
+    <h3>{{ titre }}</h3>
+    <div class="petitContainer">
+      <label>Le plus</label>
+      <ul>
+        <li *ngFor="let text of voyage.avisPositive">{{ text }}</li>
+      </ul>
+      <label>Les moins</label>
+      <ul>
+        <li *ngFor="let text of voyage.avisNegatif">{{ text }}</li>
+      </ul>
+      <label>Mon conseil</label>
+      <ul>
+        <li *ngFor="let text of voyage.conseil">{{ text }}</li>
+      </ul>
+    </div>
+  </div>
+</section>

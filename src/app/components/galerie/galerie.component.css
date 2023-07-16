@@ -1,0 +1,19 @@
+.container {
+    border: 3px solid rgb(22, 198, 61);
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    justify-items: center; 
+    align-items: center; 
+    gap:15px;
+    padding-left: 152px;
+    margin-bottom: 63px;
+    margin-top: 83px;
+    
+}
+
+img {
+    width: 320px;
+    height: 320px;
+   
+}
+

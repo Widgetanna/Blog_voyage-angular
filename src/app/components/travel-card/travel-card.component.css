@@ -1,0 +1,21 @@
+p {
+    font-family: var(--Inter);
+    font-size: 20px;
+    color: var(--blanc);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 10px;
+    
+}
+
+.petitContainer {
+    width: 1029px;
+    height: auto;
+    /* permet à la div de s'adapter à la largeur de son contenu*/
+    display: inline-block;
+    background-color: var(--marron);
+    margin-top: 44px;
+    margin-left: 152px;
+    padding: 49px 59px 59px 59px;
+}

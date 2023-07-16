@@ -1,0 +1,11 @@
+<section>
+<div class="container">
+  <h1> {{ voyage.country }} - {{ voyage.city }}</h1>
+  <p>
+    {{ voyage.goDate | date : "dd/MM/yyyy" }} •
+    {{ voyage.backDate | date : "dd/MM/yyyy" }}
+  </p>
+  <img src="{{ voyage.image }}" alt="Image de {{ voyage.country }}" />
+  </div>
+</section>
+   

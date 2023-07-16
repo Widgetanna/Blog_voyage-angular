@@ -1,0 +1,26 @@
+<section>
+  <div class="imageContainer">
+    <a (click)="onImageClick(voyage)"
+      [routerLink]="['/page2']"
+      [queryParams]="{ 
+        id: voyage.id, 
+        image: voyage.image,
+        city: voyage.city,
+        country: voyage.country, 
+      }"
+    >
+      <img src="{{ voyage.image }}" alt="Image de {{ voyage.country }}" />
+
+      <div class="container">
+        <h2>
+          {{ voyage.country }} - {{ voyage.city }}
+          <div class="barre-verticale"></div>
+        </h2>
+        <p>
+          Du {{ voyage.goDate | date : "dd/MM/yyyy" }} - au
+          {{ voyage.backDate | date : "dd/MM/yyyy" }}
+        </p>
+      </div></a
+    >
+  </div>
+</section>

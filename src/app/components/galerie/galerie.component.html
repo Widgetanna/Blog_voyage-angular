@@ -1,0 +1,6 @@
+<h3>{{ titre }}</h3>
+    <div class="container"> 
+        <div *ngFor="let image of images">
+            <img [src]="getImageUrl(image)" alt={{image.titre}} />
+          </div>
+</div>

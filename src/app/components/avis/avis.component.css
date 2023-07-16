@@ -1,0 +1,27 @@
+.petitContainer {
+margin-top: 44px;
+}
+label {
+    font-family: 'Lora';
+    font-size: 24px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    margin-left: 147px;
+    
+   
+}
+ul {
+    margin-top: 33px; 
+    margin-bottom: 62px; 
+}
+
+li {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 147px;
+    
+}
