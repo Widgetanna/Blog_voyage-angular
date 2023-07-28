@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { IVOYAGES, IVoyage } from 'src/app/parametre.mock';
-import { VoyageService } from 'src/app/voyage.service';
+import { VoyageService } from 'src/app/services/voyage.service';
 
 @Component({
   selector: 'app-picture-card',
@@ -19,7 +19,7 @@ export class PictureCardComponent {
   ngOnInit(): void {
     this.route.queryParams.subscribe(params => {
       const id = Number(params['id']);
-      this.voyage = this.voyageService.getSelectedVoyage(id);
+     this.voyage = this.voyageService.getSelectedVoyage(id);
     });
   }
 }

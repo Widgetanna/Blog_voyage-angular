@@ -13,8 +13,8 @@ import { BigCardComponent } from './components/big-card/big-card.component';
 import { SmallCardComponent } from './components/small-card/small-card.component';
 import { PictureCardComponent } from './components/picture-card/picture-card.component';
 import { TravelCardComponent } from './components/travel-card/travel-card.component';
-import { galerieComponent } from './components/galerie/galerie.component';
 import { HttpClientModule } from '@angular/common/http';
+import GalerieComponent from './components/galerie/galerie.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     ButtonComponent,
     AvisComponent,
-    galerieComponent,
+    GalerieComponent,
     BigCardComponent,
     SmallCardComponent,
     PictureCardComponent,

@@ -1,10 +1,12 @@
+
 <section>
-   <div class="container">
-    <div class="test"></div>
+  <div class="container">
+    <div class="barre-verticale1"></div>
+    <ng-container *ngFor="let voyage of voyages">
+      <p class="textTemp" *ngIf="voyage.city === cityName">{{ voyage.city }}  {{ temperatures[voyage.city] }} °C</p>
+    </ng-container>
     <div class="barre-verticale"></div>
     <p>Carnet de voyages</p>
-
-    <div class="barre-verticale barre-verticale1"></div>
-    <p>{{cityName}}{{temperature}}°C</p>
   </div>
 </section>
+

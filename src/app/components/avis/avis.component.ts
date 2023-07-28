@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { IVOYAGES, IVoyage } from 'src/app/parametre.mock';
-import { VoyageService } from 'src/app/voyage.service';
+import { VoyageService } from 'src/app/services/voyage.service';
 
 @Component({
   selector: 'app-avis',

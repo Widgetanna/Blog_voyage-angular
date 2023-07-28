@@ -1,14 +1,14 @@
 import { Component, Input} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { IVOYAGES, IVoyage, IimageGalerie} from 'src/app/parametre.mock';
-import { VoyageService } from 'src/app/voyage.service';
+import { VoyageService } from 'src/app/services/voyage.service';
 
 @Component({
   selector: 'app-galerie',
   templateUrl: './galerie.component.html',
   styleUrls: ['./galerie.component.css']
 })
-export class galerieComponent  {
+export default class GalerieComponent  {
   voyages: IVoyage[] = IVOYAGES;
   images: IimageGalerie[]= [];
   @Input() titre!: string;
